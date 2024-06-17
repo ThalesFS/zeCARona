@@ -1,0 +1,57 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial - ZeCaronas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9ecef;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        button {
+            display: block;
+            width: 200px;
+            padding: 12px;
+            margin: 10px auto;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Página Inicial - ZeCaronas</h2>
+    <button onclick="window.location.href='/requestRide'">Pedir Carona</button>
+    <button onclick="window.location.href='/offerRide'">Oferecer Carona</button>
+    <button onclick="window.location.href='/listRides'">Listar Caronas</button>
+    <button onclick="window.location.href='/profile'">Ver Perfil</button>
+</div>
+</body>
+</html>
